@@ -15,6 +15,7 @@
             android:layout_marginBottom="52dp"
             android:clickable="true"
             android:ellipsize="end"
+            android:gravity="center"
             android:paddingBottom="@dimen/_11pxv"
             android:singleLine="true"
             app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
@@ -36,6 +37,7 @@
             android:paddingStart="@dimen/_12pxh"
             android:paddingEnd="@dimen/_11pxh"
             android:paddingBottom="@dimen/_7pxv"
+            android:gravity="center"
             android:singleLine="true"
             app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +47,7 @@
             app:layout_constraintVertical_bias="0.888"
             android:text="@string/lbl_subir_foto" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtUsername"
             style="@style/txtSolidRounded_1"
             android:layout_width="242dp"
@@ -60,9 +62,9 @@
             app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageGroup3"
-            android:text="@string/lbl_username" />
+            android:hint="@string/lbl_username" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtFirstname"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
@@ -77,9 +79,9 @@
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtUsername"
-            android:text="Nombre" />
+            android:hint="Nombre" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtTelfono"
             style="@style/txtSolidRounded_1"
             android:layout_width="243dp"
@@ -93,9 +95,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtLastname2"
-            android:text="@string/lbl_tel_fono" />
+            android:hint="@string/lbl_tel_fono" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtLastname"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
@@ -110,9 +112,9 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtFirstname"
-            android:text="Apellidos" />
+            android:hint="Apellidos" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtLastname2"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
@@ -127,15 +129,17 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtLastname"
-            android:text="Email" />
+            android:hint="Email" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup100"
             style="@style/groupStyleorange_500_ce"
-            android:layout_width="415dp"
-            android:layout_height="59dp"
+            android:layout_width="406dp"
+            android:layout_height="51dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView

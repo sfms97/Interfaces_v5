@@ -24,15 +24,17 @@
             android:text="@string/lbl_reg_strate" />
 
 
-        <Button
-            android:id="@+id/btn_Login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+        <View
+            android:id="@+id/viewRectangle3"
+            android:layout_width="@dimen/_114pxh"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/rectangle_bg_amber_700_radius_20"
+            android:clickable="true"
             app:layout_constraintBottom_toTopOf="@+id/txtRegistrate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/txtStudyEnjoy"
@@ -84,11 +86,27 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/btn_Login"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangle3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            style="@style/txtSansitaSwashedromanregular16_1"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/lbl_login"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewRectangle3"
+            app:layout_constraintEnd_toEndOf="@+id/viewRectangle3"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangle3"
+            app:layout_constraintTop_toTopOf="@+id/viewRectangle3"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

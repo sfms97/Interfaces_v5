@@ -14,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.test2.databinding.ActivityMainBinding
+import com.example.test2.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,11 +46,14 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        /*val boton2: TextView = findViewById(R.id.action_nav_home_to_blankFragment)
+        val boton2: TextView = findViewById(R.id.txtAadirEvento)
         boton2.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }*/
+            val newFragment = BlankFragment()
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_content_main, newFragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
     }
 

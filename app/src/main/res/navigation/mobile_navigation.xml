@@ -8,32 +8,30 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.test2.ui.home.HomeFragment"
-        android:label="Calendario"
+        android:label=" "
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_nav_home_to_blankFragment"
-            app:destination="@id/blankFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.test2.ui.gallery.GalleryFragment"
-        android:label="Ocio"
+        android:label=" "
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.test2.ui.slideshow.SlideshowFragment"
-        android:label="Apuntes"
+        android:label=" "
         tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.test2.BlankFragment"
-        android:label="Eventos"
+        android:label=" "
         tools:layout="@layout/fragment_blank" />
     <fragment
         android:id="@+id/PerfilFragment"
         android:name="com.example.test2.PerfilFragment"
-        android:label="Perfil"
+        android:label=" "
         tools:layout="@layout/fragment_perfil" />
 </navigation>

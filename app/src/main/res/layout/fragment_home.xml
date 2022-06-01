@@ -11,24 +11,9 @@
         android:id="@+id/constraintCalendario"
         style="@style/groupStylelime_100"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"><![CDATA[
 
-        <TextView
-            android:id="@+id/txtCalendario"
-            style="@style/txtSansitaSwashedromanregular36"
-            android:layout_width="293dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="92dp"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:singleLine="true"
-            android:text="@{calendarioVM.calendarioModel.txtCalendario}"
-            app:layout_constraintBottom_toTopOf="@+id/viewRectangle9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.109"
-            tools:text="Calendario" /><![CDATA[
+
 
 
 
@@ -43,7 +28,27 @@
 
 
 
+
+
+
+
         ]]>
+
+        <TextView
+            android:id="@+id/txtCalendario"
+            style="@style/txtSansitaSwashedromanregular36"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@{calendarioVM.calendarioModel.txtCalendario}"
+            app:layout_constraintBottom_toTopOf="@+id/calendarView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.602"
+            tools:text="Calendario" />
 
         <View
             android:id="@+id/viewRectangle9"
@@ -129,5 +134,15 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.518" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangle9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

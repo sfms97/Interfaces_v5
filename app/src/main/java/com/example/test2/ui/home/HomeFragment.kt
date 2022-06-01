@@ -45,6 +45,10 @@ class HomeFragment : Fragment() {
         )
 
 
+        /*val boton3: TextView = findViewById(R.id.txtAadirEvento)
+        boton3.setOnClickListener{
+
+        }*/
 
 
         return root

@@ -12,7 +12,7 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        var boton : Button = findViewById(R.id.btn_Login)
+        var boton : TextView = findViewById(R.id.txtLogin)
 
         boton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
