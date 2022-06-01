@@ -1,7 +1,9 @@
 package com.example.test2
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -42,6 +44,13 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        /*val boton2: TextView = findViewById(R.id.action_nav_home_to_blankFragment)
+        boton2.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }*/
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

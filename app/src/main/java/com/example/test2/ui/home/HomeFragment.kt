@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.test2.R
 import com.example.test2.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -42,6 +43,8 @@ class HomeFragment : Fragment() {
             textView2.text = it
         }
         )
+
+
 
 
         return root
