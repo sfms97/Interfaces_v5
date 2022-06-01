@@ -23,8 +23,17 @@
         android:label="Apuntes"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/blankFragment"
+        android:id="@+id/ApuntesFragment"
         android:name="com.example.test2.BlankFragment"
+
         android:label="Eventos"
+
+        android:label="@string/menu_gallery"
+
         tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/PerfilFragment"
+        android:name="com.example.test2.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>
