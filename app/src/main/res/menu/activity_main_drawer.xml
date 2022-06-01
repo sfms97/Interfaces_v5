@@ -15,10 +15,10 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Apuntes" />
         <item
             android:id="@+id/blankFragment"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="hello_blank_fragment" />
+            android:title="Eventos" />
     </group>
 </menu>
