@@ -1,14 +1,190 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PerfilFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintPerfil"
+        style="@style/groupStylelime_100"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtEditar"
+            style="@style/txtSolidRounded"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="52dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/_11pxv"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
+            app:layout_constraintEnd_toStartOf="@+id/txtSubirFoto"
+            app:layout_constraintHorizontal_bias="0.673"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelfono"
+            app:layout_constraintVertical_bias="1.0"
+            android:text="@string/lbl_editar" />
+
+        <TextView
+            android:id="@+id/txtSubirFoto"
+            style="@style/txtSolidRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="48dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_12pxh"
+            android:paddingEnd="@dimen/_11pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.773"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelfono"
+            app:layout_constraintVertical_bias="0.888"
+            android:text="@string/lbl_subir_foto" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            style="@style/txtSolidRounded_1"
+            android:layout_width="242dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageGroup3"
+            android:text="@string/lbl_username" />
+
+        <TextView
+            android:id="@+id/txtFirstname"
+            style="@style/txtSolidRounded_1"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingBottom="@dimen/_9pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUsername"
+            android:text="Nombre" />
+
+        <TextView
+            android:id="@+id/txtTelfono"
+            style="@style/txtSolidRounded_1"
+            android:layout_width="243dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingBottom="@dimen/_3pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLastname2"
+            android:text="@string/lbl_tel_fono" />
+
+        <TextView
+            android:id="@+id/txtLastname"
+            style="@style/txtSolidRounded_1"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstname"
+            android:text="Apellidos" />
+
+        <TextView
+            android:id="@+id/txtLastname2"
+            style="@style/txtSolidRounded_1"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_11pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLastname"
+            android:text="Email" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup100"
+            style="@style/groupStyleorange_500_ce"
+            android:layout_width="415dp"
+            android:layout_height="59dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageGroup2"
+                app:layout_constraintHorizontal_bias="0.321"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2"
+                app:srcCompat="@drawable/img_group_1" />
+
+            <ImageView
+                android:id="@+id/imageGroup"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.688"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup2"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
+
+            <ImageView
+                android:id="@+id/imageGroup2"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageGroup3"
+            android:layout_width="233dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="52dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

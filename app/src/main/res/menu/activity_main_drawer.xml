@@ -19,15 +19,8 @@
             android:title="Apuntes" />
         <item
             android:id="@+id/blankFragment"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Eventos" />
-
             android:icon="@android:drawable/ic_menu_edit"
             android:title="Eventos" />
-        <item
-            android:id="@+id/ApuntesFragment"
-            android:icon="?android:attr/actionModeFindDrawable"
-            android:title="Apuntes" />
         <item
             android:id="@+id/PerfilFragment"
             android:icon="@android:drawable/btn_star_big_on"
