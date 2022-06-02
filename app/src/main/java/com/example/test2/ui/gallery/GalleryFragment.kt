@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.test2.R
 import com.example.test2.databinding.FragmentGalleryBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -47,6 +50,18 @@ class GalleryFragment : Fragment(){
             textView2.text = it
         }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val navCtrl = this.findNavController()
+
+        var btnIrCalendar2: ImageView = view.findViewById(R.id.imageGroup1)
+        btnIrCalendar2.setOnClickListener {
+            navCtrl.navigate(R.id.nav_home)
+        }
+
     }
 
     override fun onDestroyView() {

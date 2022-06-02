@@ -16,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [BlankFragment.newInstance] factory method to
+ * Use the [apuntesFisica.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BlankFragment : Fragment() {
+class apuntesFisica : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,7 +37,7 @@ class BlankFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+        return inflater.inflate(R.layout.fragment_apuntes_fisica, container, false)
     }
 
     companion object {
@@ -47,38 +47,42 @@ class BlankFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment.
+         * @return A new instance of fragment apuntesFisica.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BlankFragment().apply {
+            apuntesFisica().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val navCtrl = this.findNavController()
+        var btnVerApuntes: View = view.findViewById(R.id.viewRectangle)
+        btnVerApuntes.setOnClickListener {
+            navCtrl.navigate(R.id.verApuntes)
+        }
+        var btnDescargar: View = view.findViewById(R.id.viewRectangle3)
+        btnDescargar.setOnClickListener {
+            navCtrl.navigate(R.id.archivoDescargado)
+        }
 
-        var btnIrCalencario: ImageView = view.findViewById(R.id.imageGroup27)
-        btnIrCalencario.setOnClickListener {
+        var btnCalendario: ImageView = view.findViewById(R.id.imageView6)
+        btnCalendario.setOnClickListener {
             navCtrl.navigate(R.id.nav_home)
         }
-        var btnIrOcio: ImageView = view.findViewById(R.id.imageView10)
-        btnIrOcio.setOnClickListener {
+        var btnOcio: ImageView = view.findViewById(R.id.imageView8)
+        btnOcio.setOnClickListener {
             navCtrl.navigate(R.id.nav_gallery)
         }
-        var btnAnadirEvento: TextView = view.findViewById(R.id.txtAadirEvento2)
-        btnAnadirEvento.setOnClickListener {
-            navCtrl.navigate(R.id.eventoModificadoFragment)
+        var btnSubirApuntes: ImageView = view.findViewById(R.id.imageGroup)
+        btnSubirApuntes.setOnClickListener {
+            navCtrl.navigate(R.id.subirApuntes)
         }
-
-
-
     }
+
 }

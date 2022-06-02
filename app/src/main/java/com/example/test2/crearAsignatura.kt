@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -62,6 +64,9 @@ class crearAsignatura : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navCtrl = this.findNavController()
 
-
+        var btnGuardar2: Button = view.findViewById(R.id.btnGuardar)
+        btnGuardar2.setOnClickListener {
+            navCtrl.navigate(R.id.apuntesSubidos)
+        }
     }
 }

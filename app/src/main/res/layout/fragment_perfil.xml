@@ -7,6 +7,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imageGroup3"
+            android:layout_width="233dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/txtEditar"
             style="@style/txtSolidRounded"
@@ -52,84 +64,85 @@
             style="@style/txtSolidRounded_1"
             android:layout_width="242dp"
             android:layout_height="48dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:ellipsize="end"
             android:gravity="start"
+            android:hint="@string/lbl_username"
             android:paddingStart="@dimen/_7pxh"
             android:paddingBottom="@dimen/_7pxv"
             android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageGroup3"
-            android:hint="@string/lbl_username" />
+            app:layout_constraintTop_toBottomOf="@+id/imageGroup3" />
 
         <EditText
             android:id="@+id/txtFirstname"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
             android:layout_height="48dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:ellipsize="end"
             android:gravity="start"
+            android:hint="Nombre"
             android:paddingStart="@dimen/_9pxh"
             android:paddingBottom="@dimen/_9pxv"
             android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtUsername"
-            android:hint="Nombre" />
+            app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
         <EditText
             android:id="@+id/txtTelfono"
             style="@style/txtSolidRounded_1"
             android:layout_width="243dp"
             android:layout_height="48dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="24dp"
             android:ellipsize="end"
             android:gravity="start"
+            android:hint="@string/lbl_tel_fono"
             android:paddingStart="@dimen/_11pxh"
             android:paddingBottom="@dimen/_3pxv"
             android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLastname2"
-            android:hint="@string/lbl_tel_fono" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLastname2" />
 
         <EditText
             android:id="@+id/txtLastname"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
             android:layout_height="48dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="28dp"
             android:ellipsize="end"
             android:gravity="start"
+            android:hint="Apellidos"
             android:paddingStart="@dimen/_11pxh"
             android:paddingBottom="@dimen/_7pxv"
             android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtFirstname"
-            android:hint="Apellidos" />
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstname" />
 
         <EditText
             android:id="@+id/txtLastname2"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
             android:layout_height="48dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:ellipsize="end"
             android:gravity="start"
+            android:hint="Email"
             android:paddingStart="@dimen/_11pxh"
             android:paddingBottom="@dimen/_7pxv"
             android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLastname"
-            android:hint="Email" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLastname" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup100"
@@ -140,31 +153,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
-            app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/imageView22"
                 android:layout_width="56dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toStartOf="@+id/imageGroup2"
-                app:layout_constraintHorizontal_bias="0.321"
+                app:layout_constraintHorizontal_bias="0.386"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageGroup2"
                 app:srcCompat="@drawable/img_group_1" />
-
-            <ImageView
-                android:id="@+id/imageGroup"
-                android:layout_width="56dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="4dp"
-                android:clickable="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_group_3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.688"
-                app:layout_constraintStart_toEndOf="@+id/imageGroup2"
-                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
 
             <ImageView
                 android:id="@+id/imageGroup2"
@@ -177,18 +175,20 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.428" />
+                app:layout_constraintVertical_bias="0.476" />
+
+            <ImageView
+                android:id="@+id/imageGroup"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.63"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup2"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/imageGroup3"
-            android:layout_width="233dp"
-            android:layout_height="151dp"
-            android:layout_marginTop="52dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_group"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

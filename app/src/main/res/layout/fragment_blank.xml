@@ -49,7 +49,7 @@
                     app:layout_constraintVertical_bias="0.32" />
 
                 <TextView
-                    android:id="@+id/txtAadir"
+                    android:id="@+id/txtAadirEvento2"
                     style="@style/txtSansitaSwashedromanregular18"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

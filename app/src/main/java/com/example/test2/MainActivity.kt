@@ -18,7 +18,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.test2.databinding.ActivityMainBinding
 import com.example.test2.ui.gallery.GalleryFragment
 import androidx.lifecycle.Transformations.map
 import com.example.test2.databinding.ActivityMainBinding

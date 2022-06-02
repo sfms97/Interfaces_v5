@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -39,11 +40,29 @@ class SlideshowFragment : Fragment() {
 
    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var btn12: TextView = view.findViewById(R.id.txtAadir)
         val navCtrl = this.findNavController()
+        var btn12: TextView = view.findViewById(R.id.txtAadir)
         btn12.setOnClickListener {
             navCtrl.navigate(R.id.crearAsignatura)
         }
+
+       var btnEliminar: TextView = view.findViewById(R.id.txtEliminar)
+       btnEliminar.setOnClickListener {
+           navCtrl.navigate(R.id.eliminarFragment)
+       }
+
+       var btnCalendario: ImageView = view.findViewById(R.id.imageView2)
+       btnCalendario.setOnClickListener {
+           navCtrl.navigate(R.id.nav_home)
+       }
+       var btnOcio: ImageView = view.findViewById(R.id.imageView)
+       btnOcio.setOnClickListener {
+           navCtrl.navigate(R.id.nav_gallery)
+       }
+       var btnFisica: TextView = view.findViewById(R.id.txtFsica)
+       btnFisica.setOnClickListener {
+           navCtrl.navigate(R.id.apuntesFisica)
+       }
     }
 
     override fun onDestroyView() {

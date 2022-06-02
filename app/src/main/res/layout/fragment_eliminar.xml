@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintEliminar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_300">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtSeguroQueQui"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_38pxh"
+            android:layout_marginStart="@dimen/_38pxh"
+            android:layout_marginTop="@dimen/_57pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:text="@string/msg_seguro_que_qui2"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup401"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_44pxv"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtSeguroQueQui">
+
+            <TextView
+                android:id="@+id/txtS"
+                style="@style/txtSolidRounded_6"
+                android:layout_width="96dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="@dimen/_38pxh"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:paddingBottom="@dimen/_16pxv"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toEndOf="@+id/txtNo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/lbl_s" />
+
+            <TextView
+                android:id="@+id/txtNo"
+                style="@style/txtSolidRounded_8"
+                android:layout_width="118dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="@dimen/_38pxh"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtS"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/lbl_no" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
