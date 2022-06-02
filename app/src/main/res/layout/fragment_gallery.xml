@@ -10,39 +10,41 @@
         android:id="@+id/constraintOcio"
         style="@style/groupStylelime_100"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/txtOcioCercano"
             style="@style/txtSansitaSwashedromanregular36"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
             android:ellipsize="end"
             android:gravity="center"
             android:singleLine="true"
             android:text="@{ocioVM.ocioModel.txtOcioCercano}"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.124"
             tools:text="@string/lbl_ocio_cercano" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup279"
-            style="@style/groupStyleorange_500_cc"
+            style="@style/groupStyleorange_500_e5"
             android:layout_width="411dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/imageGroup"
-                android:layout_width="@dimen/_34pxh"
-                android:layout_height="@dimen/_23pxh"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_24pxh"
                 android:layout_marginStart="@dimen/_33pxh"
                 android:layout_marginTop="@dimen/_2pxv"
                 android:layout_marginEnd="@dimen/_76pxh"
@@ -91,6 +93,7 @@
             android:id="@+id/imageRectangle2"
             android:layout_width="339dp"
             android:layout_height="0dp"
+            android:layout_marginTop="36dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -119,13 +122,12 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{ocioVM.ocioModel.txtBuscar}"
             app:layout_constraintBottom_toBottomOf="@+id/imageRectangle2"
             app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
             app:layout_constraintHorizontal_bias="0.172"
             app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
             app:layout_constraintTop_toTopOf="@+id/imageRectangle2"
-            tools:text="@string/lbl_buscar" />
+            android:text="@string/lbl_buscar" />
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView2"

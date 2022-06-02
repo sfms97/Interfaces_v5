@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
@@ -17,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [crearAsignatura.newInstance] factory method to
+ * Use the [editarPerfil.newInstance] factory method to
  * create an instance of this fragment.
  */
-class crearAsignatura : Fragment() {
+class editarPerfil : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,7 +37,7 @@ class crearAsignatura : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_crear_asignatura, container, false)
+        return inflater.inflate(R.layout.fragment_editar_perfil, container, false)
     }
 
     companion object {
@@ -48,26 +47,33 @@ class crearAsignatura : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment crearAsignatura.
+         * @return A new instance of fragment editarPerfil.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            crearAsignatura().apply {
+            editarPerfil().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val navCtrl = this.findNavController()
 
-        var btnGuardar2: TextView = view.findViewById(R.id.btnGuardar)
-        btnGuardar2.setOnClickListener {
-            navCtrl.navigate(R.id.apuntesSubidos)
+        var btnEditar: View = view.findViewById(R.id.viewRectangle2)
+        btnEditar.setOnClickListener {
+            navCtrl.navigate(R.id.PerfilFragment)
+        }
+        var btnCalendario: ImageView = view.findViewById(R.id.imageView14)
+        btnCalendario.setOnClickListener {
+            navCtrl.navigate(R.id.nav_home)
+        }
+        var btnOcio: ImageView = view.findViewById(R.id.imageView15)
+        btnOcio.setOnClickListener {
+            navCtrl.navigate(R.id.nav_gallery)
         }
     }
 }

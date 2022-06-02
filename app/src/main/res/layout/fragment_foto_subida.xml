@@ -1,48 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintAadirAsignatu"
-        style="@style/groupStylegray_300_e5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/asignaturaAAsignatura"
-            android:layout_width="312dp"
-            android:layout_height="53dp"
-            android:ems="10"
-            android:hint="Introduce el nombre de la asignatura"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/txtNombreDeLaAs"
-            app:layout_constraintEnd_toEndOf="@+id/txtNombreDeLaAs"
-            app:layout_constraintStart_toStartOf="@+id/txtNombreDeLaAs"
-            app:layout_constraintTop_toTopOf="@+id/txtNombreDeLaAs" />
+        android:id="@+id/constraintFotosubida"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_300">
 
         <TextView
-            android:id="@+id/txtNombreDeLaAs"
+            android:id="@+id/txtFotoSubida"
             style="@style/txtSansitaSwashedromanregular18_1"
-            android:layout_width="322dp"
-            android:layout_height="67dp"
-            android:layout_marginStart="@dimen/_69pxh"
-            android:layout_marginTop="@dimen/_12pxv"
-            android:layout_marginEnd="@dimen/_68pxh"
+            android:layout_width="182dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/_118pxh"
+            android:layout_marginTop="132dp"
+            android:layout_marginEnd="@dimen/_118pxh"
             android:ellipsize="end"
             android:gravity="center"
             android:singleLine="true"
-            app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintGroup351" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintGroup371"
+            app:layout_constraintVertical_bias="0.0"
+            android:text="@string/lbl_foto_subida" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintGroup351"
+            android:id="@+id/constraintGroup371"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12pxv"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -73,21 +61,20 @@
                 app:layout_constraintHorizontal_bias="0.09"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/btnGuardar"
-            style="@style/txtSansitaSwashedromanregular18"
-            android:layout_width="105dp"
-            android:layout_height="65dp"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:singleLine="true"
-            android:text="Guardar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/asignaturaAAsignatura"
-            app:layout_constraintVertical_bias="0.102" />
+            <ImageView
+                android:id="@+id/imagePngkey6"
+                android:layout_width="@dimen/_42pxh"
+                android:layout_height="@dimen/_45pxh"
+                android:layout_marginStart="@dimen/_193pxh"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_pngkey5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toEndOf="@+id/imageInterfaceFavor"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

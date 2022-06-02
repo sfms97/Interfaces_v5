@@ -11,32 +11,11 @@
         android:id="@+id/constraintCalendario"
         style="@style/groupStylelime_100"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"><![CDATA[
-
-
-
-
-
-
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="599dp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        ]]>
+        app:layout_constraintTop_toTopOf="parent">
 
         <View
             android:id="@+id/viewRectangle9"
@@ -71,15 +50,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"><![CDATA[
-            app:layout_constraintTop_toBottomOf="@+id/viewRectangle9"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintVertical_bias="1.0">
-
-
-
-
-
-            ]]>
 
             <ImageView
                 android:id="@+id/imageGroup"

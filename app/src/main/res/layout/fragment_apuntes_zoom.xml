@@ -20,13 +20,15 @@
                 android:layout_height="wrap_content" android:layout_width="match_parent">
 
                 <ImageView android:id="@+id/imageGroup97"
+                    style="@style/groupStyleorange_500_e5"
                     android:layout_height="@dimen/_40pxh"
                     android:layout_marginTop="@dimen/_39pxv"
                     android:layout_width="0dp" android:scaleType="fitXY"
                     android:src="@drawable/img_group19"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageImage1"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageImage1"/>
                 <ImageView android:id="@+id/imageImage1"
                     android:layout_height="0dp"
                     android:layout_width="0dp" android:scaleType="fitXY"

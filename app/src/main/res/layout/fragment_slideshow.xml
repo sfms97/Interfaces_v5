@@ -7,36 +7,21 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylelime_100">
 
-        <ScrollView
-            android:id="@+id/scrollViewScrollview"
-            android:layout_width="412dp"
-            android:layout_height="744dp"
-            android:layout_marginTop="@dimen/_10pxv"
-            android:clipToPadding="false"
-            android:fillViewport="true"
+
+        <ImageView
+            android:id="@+id/imageGroup52"
+            style="@style/groupStyleorange_500_e5"
+            android:layout_width="407dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group19"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintGroup257"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/imageGroup52"
-                    android:layout_width="407dp"
-                    android:layout_height="59dp"
-                    android:layout_marginBottom="16dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_group19"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
+        <TextView
                     android:id="@+id/txtAsignaturas"
                     style="@style/txtSansitaSwashedromanregular36"
                     android:layout_width="0dp"
@@ -248,7 +233,5 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
                     app:layout_constraintTop_toTopOf="@+id/imageView2"
                     app:srcCompat="@drawable/img_group_10" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -146,7 +146,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup100"
-            style="@style/groupStyleorange_500_ce"
+            style="@style/groupStyleorange_500_e5"
             android:layout_width="406dp"
             android:layout_height="51dp"
             app:layout_constraintBottom_toBottomOf="parent"

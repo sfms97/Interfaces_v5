@@ -61,7 +61,6 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.888"
             android:src="@drawable/img_pngkey1" />
 
         <EditText
@@ -74,7 +73,6 @@
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
@@ -88,7 +86,6 @@
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/viewRectangle3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 

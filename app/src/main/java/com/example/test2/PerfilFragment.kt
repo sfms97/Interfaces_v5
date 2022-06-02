@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,5 +58,26 @@ class PerfilFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val navCtrl = this.findNavController()
+
+        var btneditarPerfil: TextView = view.findViewById(R.id.txtEditar)
+        btneditarPerfil.setOnClickListener {
+            navCtrl.navigate(R.id.editarPerfil)
+        }
+        var subirFOto: TextView = view.findViewById(R.id.txtSubirFoto)
+        subirFOto.setOnClickListener {
+            navCtrl.navigate(R.id.subirFoto)
+        }
+        var btnCalendario: ImageView = view.findViewById(R.id.imageView22)
+        btnCalendario.setOnClickListener {
+            navCtrl.navigate(R.id.nav_home)
+        }
+        var btnOcio: ImageView = view.findViewById(R.id.imageGroup2)
+        btnOcio.setOnClickListener {
+            navCtrl.navigate(R.id.nav_gallery)
+        }
     }
 }

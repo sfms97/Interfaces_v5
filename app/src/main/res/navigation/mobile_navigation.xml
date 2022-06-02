@@ -36,56 +36,71 @@
     <fragment
         android:id="@+id/crearAsignatura"
         android:name="com.example.test2.crearAsignatura"
-        android:label="fragment_crear_asignatura"
+        android:label=" "
         tools:layout="@layout/fragment_crear_asignatura" />
     <fragment
         android:id="@+id/eventoModificadoFragment"
         android:name="com.example.test2.eventoModificadoFragment"
-        android:label="fragment_evento_modificado"
+        android:label=" "
         tools:layout="@layout/fragment_evento_modificado" />
     <fragment
         android:id="@+id/eliminarFragment"
         android:name="com.example.test2.eliminarFragment"
-        android:label="fragment_eliminar"
+        android:label=" "
         tools:layout="@layout/fragment_eliminar" />
     <fragment
         android:id="@+id/eventoEliminadoFragmnet"
         android:name="com.example.test2.eventoEliminadoFragmnet"
-        android:label="fragment_evento_eliminado_fragmnet"
+        android:label=" "
         tools:layout="@layout/fragment_evento_eliminado_fragmnet" />
     <fragment
         android:id="@+id/apuntesSubidos"
         android:name="com.example.test2.apuntesSubidos"
-        android:label="fragment_apuntes_subidos"
+        android:label=" "
         tools:layout="@layout/fragment_apuntes_subidos" />
     <fragment
         android:id="@+id/asignaturaSubida"
         android:name="com.example.test2.asignaturaSubida"
-        android:label="fragment_asignatura_subida"
+        android:label=" "
         tools:layout="@layout/fragment_asignatura_subida" />
     <fragment
         android:id="@+id/apuntesFisica"
         android:name="com.example.test2.apuntesFisica"
-        android:label="fragment_apuntes_fisica"
+        android:label=" "
         tools:layout="@layout/fragment_apuntes_fisica" />
     <fragment
         android:id="@+id/verApuntes"
         android:name="com.example.test2.verApuntes"
-        android:label="fragment_ver_apuntes"
+        android:label=" "
         tools:layout="@layout/fragment_ver_apuntes" />
     <fragment
         android:id="@+id/archivoDescargado"
         android:name="com.example.test2.archivoDescargado"
-        android:label="fragment_archivo_descargado"
+        android:label=" "
         tools:layout="@layout/fragment_archivo_descargado" />
     <fragment
         android:id="@+id/apuntesZoom"
         android:name="com.example.test2.apuntesZoom"
-        android:label="fragment_apuntes_zoom"
+        android:label=" "
         tools:layout="@layout/fragment_apuntes_zoom" />
     <fragment
         android:id="@+id/subirApuntes"
         android:name="com.example.test2.subirApuntes"
-        android:label="fragment_subir_apuntes"
+        android:label=" "
         tools:layout="@layout/fragment_subir_apuntes" />
+    <fragment
+        android:id="@+id/editarPerfil"
+        android:name="com.example.test2.editarPerfil"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+    <fragment
+        android:id="@+id/subirFoto"
+        android:name="com.example.test2.subirFoto"
+        android:label="fragment_subir_foto"
+        tools:layout="@layout/fragment_subir_foto" />
+    <fragment
+        android:id="@+id/fotoSubida"
+        android:name="com.example.test2.fotoSubida"
+        android:label="fragment_foto_subida"
+        tools:layout="@layout/fragment_foto_subida" />
 </navigation>
