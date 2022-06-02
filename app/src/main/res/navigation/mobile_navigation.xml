@@ -9,8 +9,7 @@
         android:id="@+id/nav_home"
         android:name="com.example.test2.ui.home.HomeFragment"
         android:label=" "
-        tools:layout="@layout/fragment_home" >
-    </fragment>
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -34,4 +33,9 @@
         android:name="com.example.test2.PerfilFragment"
         android:label=" "
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/crearAsignatura"
+        android:name="com.example.test2.crearAsignatura"
+        android:label="fragment_crear_asignatura"
+        tools:layout="@layout/fragment_crear_asignatura" />
 </navigation>

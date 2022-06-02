@@ -2,7 +2,10 @@ package com.example.test2
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -13,7 +16,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.test2.databinding.ActivityMainBinding
+import com.example.test2.ui.gallery.GalleryFragment
 import com.example.test2.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
@@ -46,14 +52,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val boton2: TextView = findViewById(R.id.txtAadirEvento)
-        boton2.setOnClickListener{
-            val newFragment = BlankFragment()
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.nav_host_fragment_content_main, newFragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
 
     }
 
