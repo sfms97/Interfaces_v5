@@ -16,4 +16,6 @@ class GalleryViewModel : ViewModel() {
         value = "Buscar"
     }
     val text2: LiveData<String> = _text2
+
+
 }

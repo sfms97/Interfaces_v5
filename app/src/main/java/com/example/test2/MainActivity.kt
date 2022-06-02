@@ -13,13 +13,21 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Transformations.map
 import com.example.test2.databinding.ActivityMainBinding
+import com.example.test2.databinding.FragmentGalleryBinding
 import com.example.test2.ui.home.HomeFragment
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity() , OnMapReadyCallback {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private lateinit var mMap: GoogleMap
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +62,21 @@ class MainActivity : AppCompatActivity() {
             transaction.addToBackStack(null)
             transaction.commit()
         }
+        //Eso
+       /* binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)*/
+
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        //val mapi: MapView = findViewById(R.id.mapView2)
+       // mapi.getMapAsync(this)
+
+        /*val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.mapView2) as SupportMapFragment
+        mapFragment.getMapAsync(this)*/
+
+
+
+
 
     }
 
@@ -66,5 +89,18 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+
+
+
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+
+
+        val sydney = LatLng(-34.0, 151.0)
+        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
 }

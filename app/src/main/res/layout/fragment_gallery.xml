@@ -93,7 +93,6 @@
             android:layout_height="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_rectangle2"
-            app:layout_constraintBottom_toTopOf="@+id/mapView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.04"
             app:layout_constraintStart_toStartOf="parent"
@@ -129,12 +128,13 @@
             tools:text="@string/lbl_buscar" />
 
         <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
-            android:layout_width="301dp"
-            android:layout_height="369dp"
-            android:layout_marginBottom="68dp"
+            android:id="@+id/mapView2"
+            android:layout_width="324dp"
+            android:layout_height="393dp"
             app:layout_constraintBottom_toTopOf="@+id/constraintGroup279"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRectangle2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
