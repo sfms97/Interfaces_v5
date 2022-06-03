@@ -103,4 +103,8 @@
         android:name="com.example.test2.fotoSubida"
         android:label="fragment_foto_subida"
         tools:layout="@layout/fragment_foto_subida" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.test2.login"
+        android:label="nav_logout" />
 </navigation>
