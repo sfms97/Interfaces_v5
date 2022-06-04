@@ -12,6 +12,8 @@ import android.widget.Toast
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
+import java.nio.channels.AsynchronousFileChannel.open
+import java.nio.channels.DatagramChannel.open
 import java.util.ArrayList
 
 
@@ -42,6 +44,43 @@ class login : AppCompatActivity() {
         boton2.setOnClickListener{
             val intent = Intent(this, registrate::class.java)
             startActivity(intent)
+        }
+
+        val userData: MutableList<User> = ArrayList()
+        var reader: BufferedReader? = null
+        try {
+            getUser = username!!.text.toString()
+            getPass = password!!.text.toString()
+            reader = BufferedReader(InputStreamReader(assets.open("loginDetails.csv"), "UTF-8"))
+            reader.readLine()
+            var line = ""
+            while (reader.readLine().also { line = it } != null) {
+                val token = line.split(",").toTypedArray()
+                if (token.size > 0) {
+                    val data = User()
+                    data.setId(token[0].toInt())
+                    data.setUsername(token[1])
+                    data.setPassword(token[2])
+                    userData.add(data)
+                    Log.d("Activity", "" + data)
+                    println(data)
+                    println("HHHHHHHOLA")
+                    var i: Int
+                    i = 0
+                    while (i < userData.size) {
+                        if (data.username == getUser && data.password == getPass) {
+                            Toast.makeText(
+                                applicationContext,
+                                "Password and Username is Correct",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                        i++
+                    }
+                }
+            }
+        } catch (e: IOException) {
+            e.printStackTrace()
         }
     }
     @Throws(IOException::class)
@@ -81,6 +120,7 @@ class login : AppCompatActivity() {
             }
         } catch (e: IOException) {
             e.printStackTrace()
+            println("HHHHHHHOLA")
         }
     }
 
