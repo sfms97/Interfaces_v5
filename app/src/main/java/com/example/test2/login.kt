@@ -45,7 +45,7 @@ class login : AppCompatActivity() {
         username = findViewById(R.id.editTextTextPersonName)
         password = findViewById(R.id.editTextTextPassword)
         println(Paths.get("Test/Documents/GitHub/Interfaces_v5/app/src/main/java/login.csv").toAbsolutePath())
-        println(Paths.get)
+        println(Paths.)
         val reader = Files.newBufferedReader(Paths.get("../login.csv").toAbsolutePath())
         val csvParser = CSVParser(reader, CSVFormat.DEFAULT)
         for (csvRecord in csvParser) {
