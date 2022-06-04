@@ -1,33 +1,35 @@
 package com.example.test2
 
 import android.content.Intent
-import android.os.Build
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatActivity
-import user
+import android.widget.Toast
 import java.io.BufferedReader
-import java.io.File
-import java.nio.file.Files
-import java.nio.file.Paths
-import org.apache.commons.csv.CSVFormat
-import org.apache.commons.csv.CSVParser
+import java.io.IOException
+import java.io.InputStreamReader
+import java.util.ArrayList
+
 
 class login : AppCompatActivity() {
 
-    lateinit var username: EditText
-    lateinit var password: EditText
-    lateinit var getUsername: String
-    lateinit var getPassword: String
+    var username: EditText? = null
+    var password: EditText? = null
+    var go: Button? = null
+    var getUser: String? = null
+    var getPass: String? = null
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
+        username = findViewById<View>(R.id.editTextTextPersonName) as EditText
+        password = findViewById<View>(R.id.editTextTextPassword) as EditText
         var boton : TextView = findViewById(R.id.txtLogin)
 
         boton.setOnClickListener{
@@ -41,42 +43,47 @@ class login : AppCompatActivity() {
             val intent = Intent(this, registrate::class.java)
             startActivity(intent)
         }
-
-        username = findViewById(R.id.editTextTextPersonName)
-        password = findViewById(R.id.editTextTextPassword)
-        println(Paths.get("Test/Documents/GitHub/Interfaces_v5/app/src/main/java/login.csv").toAbsolutePath())
-        println(Paths.)
-        val reader = Files.newBufferedReader(Paths.get("../login.csv").toAbsolutePath())
-        val csvParser = CSVParser(reader, CSVFormat.DEFAULT)
-        for (csvRecord in csvParser) {
-            // Accessing Values by Column Index
-            getUsername = csvRecord.get(0)
-            getPassword = csvRecord.get(1)
-            // print the value to console
-            System.out.println("Record No - " + csvRecord.getRecordNumber())
-            println("---------------")
-            println("Usuario : $getUsername")
-            println("Pass : $getPassword")
-            println("---------------")
+    }
+    @Throws(IOException::class)
+    fun goPressed(view: View?) {
+        val userData: MutableList<User> = ArrayList()
+        var reader: BufferedReader? = null
+        try {
+            getUser = username!!.text.toString()
+            getPass = password!!.text.toString()
+            reader = BufferedReader(InputStreamReader(assets.open("loginDetails.csv"), "UTF-8"))
+            reader.readLine()
+            var line = ""
+            while (reader.readLine().also { line = it } != null) {
+                val token = line.split(",").toTypedArray()
+                if (token.size > 0) {
+                    val data = User()
+                    data.setId(token[0].toInt())
+                    data.setUsername(token[1])
+                    data.setPassword(token[2])
+                    userData.add(data)
+                    Log.d("Activity", "" + data)
+                    println(data)
+                    println("HHHHHHHOLA")
+                    var i: Int
+                    i = 0
+                    while (i < userData.size) {
+                        if (data.username == getUser && data.password == getPass) {
+                            Toast.makeText(
+                                applicationContext,
+                                "Password and Username is Correct",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                        i++
+                    }
+                }
+            }
+        } catch (e: IOException) {
+            e.printStackTrace()
         }
     }
 
 
 
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun login(view:View){
-        val reader = Files.newBufferedReader(Paths.get("java/login.csv"))
-        val csvParser = CSVParser(reader, CSVFormat.DEFAULT)
-        for (csvRecord in csvParser) {
-            // Accessing Values by Column Index
-            getUsername = csvRecord.get(0)
-            getPassword = csvRecord.get(1)
-            // print the value to console
-            System.out.println("Record No - " + csvRecord.getRecordNumber())
-            println("---------------")
-            println("Usuario : $getUsername")
-            println("Pass : $getPassword")
-            println("---------------")
-        }
-    }
 }
