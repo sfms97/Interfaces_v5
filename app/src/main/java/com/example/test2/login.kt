@@ -16,7 +16,6 @@ class login : AppCompatActivity() {
 
     var username: EditText? = null
     var password: EditText? = null
-    var go: Button? = null
     var getUsername1: String? = null
     var getPassword1: String? = null
 
@@ -28,7 +27,7 @@ class login : AppCompatActivity() {
         username = findViewById<View>(R.id.editTextTextPersonName) as EditText
         password = findViewById<View>(R.id.editTextTextPassword) as EditText
         var boton: TextView = findViewById(R.id.txtLogin)
-        var go: Button = findViewById(R.id.btnGo)
+       /* var go: Button = findViewById(R.id.btnGo)
 
         go.setOnClickListener {
 
@@ -36,11 +35,58 @@ class login : AppCompatActivity() {
             val intent2 = Intent(this, MainActivity::class.java)
             startActivity(intent)
             startActivity(intent2)
-        }
+        }*/
 
         boton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            val userData: MutableList<User> = ArrayList()
+            var reader: BufferedReader? = null
+
+            println("HOLA")
+
+            try {
+                getUsername1 = username!!.text.toString()
+                getPassword1 = password!!.text.toString()
+                val fileName = "loginDetails.csv"
+                println(getUsername1)
+                println(getPassword1)
+
+                reader = BufferedReader(InputStreamReader(assets.open(fileName), "UTF-8"))
+                reader.readLine()
+                var line = ""
+                try{
+                    while (reader.readLine().also {
+                            line = it } != null) {
+                        val token = line.split(",").toTypedArray()
+                        if (token.size > 0 && token != null) {
+                            val data = User()
+                            data.setId(token[0].toInt())
+                            data.setUsername(token[1])
+                            data.setPassword(token[2])
+                            userData.add(data)
+                            println(data)
+                            var i: Int
+                            i = 0
+                            println(userData.get(0).getUsername())
+                            while (i < userData.size) {
+                                if (userData.get(i).getUsername() == getUsername1 && userData.get(i).getPassword() == getPassword1) {
+                                    println("Valores correctos")
+                                    val intent = Intent(this, MainActivity::class.java)
+                                    startActivity(intent)
+                                    onStop()
+                                }
+                                i++
+                            }
+                        }
+                    }
+                }catch(e: java.lang.NullPointerException){
+                    println("No hay mas texto para leer")
+                }
+
+            } catch (e: IOException) {
+                e.printStackTrace()
+                println("No hay mas lineas")
+            }
+
         }
 
         var boton2: TextView = findViewById(R.id.txtRegistrate)
@@ -50,49 +96,6 @@ class login : AppCompatActivity() {
             startActivity(intent)
         }
 
-/*val userData: MutableList<User> = ArrayList()
-var reader: BufferedReader? = null
-
-try {
-
-    geter = username!!.text.toString()
-    getPass = password!!.text.toString()
-
-    reader = BufferedReader(InputStreamReader
-        (assets.open("java/com/example/test2/loginDetails.csv"), "UTF-8"))
-    println("HOLA")
-    reader.readLine()
-    var line = ""
-
-    while (reader.readLine().also { line = it } != null) {
-        val token = line.split(",").toTypedArray()
-
-        if (token.size > 0) {
-            val data = User()
-            data.setId(token[0].toInt())
-            data.setUsername(token[1])
-            data.setPassword(token[2])
-            userData.add(data)
-            Log.d("Activity", "" + data)
-            println(data)
-
-            var i: Int
-            i = 0
-            while (i < userData.size) {
-                if (data.username == getUser && data.password == getPass) {
-                    Toast.makeText(
-                        applicationContext,
-                        "Password and Username is Correct",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-                i++
-            }
-        }
-    }
-} catch (e: IOException) {
-    e.printStackTrace()
-}*/
     }
 
 
@@ -108,13 +111,6 @@ try {
             getPassword1 = password!!.text.toString()
             println("entra en try")
             val fileName = "loginDetails.csv"
-
-            /*val inputStream: InputStream = assets.open("login.csv")
-            println("lio")
-            val size: Int = inputStream.available()
-            val buffer = ByteArray(size)
-            inputStream.read(buffer)
-            println("lee")*/
 
             reader = BufferedReader(InputStreamReader(assets.open(fileName), "UTF-8"))
             reader.readLine()
