@@ -3,16 +3,21 @@ package com.example.test2
 import java.io.Serializable
 
 class User : Serializable {
-    var id = null
+    var id = 0
     var username: String? = null
     var password: String? = null
+
+
+    @JvmName("getId1")
     fun getId(): Int {
-        return id!!
+        return id
     }
 
+    @JvmName("setId1")
     fun setId(id: Int) {
-        this.id = null
+        this.id = id
     }
+
     @JvmName("getUsername1")
     fun getUsername(): String? {
         return username

@@ -33,6 +33,13 @@ android {
         viewBinding true
         dataBinding true
     }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets', 'base.apk\\assets'
+            }
+        }
+    }
 }
 
 dependencies {

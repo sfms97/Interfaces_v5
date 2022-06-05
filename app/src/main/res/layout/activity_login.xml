@@ -29,6 +29,7 @@
             android:layout_width="@dimen/_114pxh"
             android:layout_height="@dimen/_50pxv"
             android:layout_marginBottom="56dp"
+            android:onClick="goPressed"
             android:background="@drawable/rectangle_bg_amber_700_radius_20"
             android:clickable="true"
             app:layout_constraintBottom_toTopOf="@+id/txtRegistrate"
@@ -96,6 +97,7 @@
             android:layout_height="48dp"
             android:gravity="center"
             android:text="@string/lbl_login"
+            android:onClick="goPressed"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/_30sp"
             app:layout_constraintBottom_toBottomOf="@+id/viewRectangle3"
@@ -105,6 +107,18 @@
             app:layout_constraintTop_toTopOf="@+id/viewRectangle3"
             app:layout_constraintVertical_bias="0.0" />
 
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/amber_700"
+            android:onClick="goPressed"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegistrate" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
