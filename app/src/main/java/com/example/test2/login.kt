@@ -49,9 +49,8 @@ class login : AppCompatActivity() {
                         val token = line.split(",").toTypedArray()
                         if (token.size > 0 && token != null) {
                             val data = User()
-                            data.setId(token[0].toInt())
-                            data.setUsername(token[1])
-                            data.setPassword(token[2])
+                            data.setUsername(token[0])
+                            data.setPassword(token[1])
                             userData.add(data)
                             println(data)
                             var i: Int
