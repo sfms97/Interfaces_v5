@@ -67,7 +67,7 @@ class HomeFragment : Fragment() {
 
         var btnOcio: ImageView = view.findViewById(R.id.imageGroup1)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
 
 

@@ -73,7 +73,7 @@ class subirFoto : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageView24)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
     }
 }

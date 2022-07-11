@@ -77,7 +77,7 @@ class apuntesFisica : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageView8)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
         var btnSubirApuntes: ImageView = view.findViewById(R.id.imageGroup)
         btnSubirApuntes.setOnClickListener {

@@ -71,7 +71,7 @@ class BlankFragment : Fragment() {
         }
         var btnIrOcio: ImageView = view.findViewById(R.id.imageView10)
         btnIrOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
         var btnAnadirEvento: TextView = view.findViewById(R.id.txtAadirEvento2)
         btnAnadirEvento.setOnClickListener {

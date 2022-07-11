@@ -73,7 +73,7 @@ class editarPerfil : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageView15)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
     }
 }

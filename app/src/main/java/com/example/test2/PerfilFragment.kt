@@ -77,7 +77,7 @@ class PerfilFragment : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageGroup2)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
     }
 }

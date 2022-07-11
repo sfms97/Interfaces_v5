@@ -57,7 +57,7 @@ class SlideshowFragment : Fragment() {
        }
        var btnOcio: ImageView = view.findViewById(R.id.imageView)
        btnOcio.setOnClickListener {
-           navCtrl.navigate(R.id.nav_gallery)
+           navCtrl.navigate(R.id.mapa)
        }
        var btnFisica: TextView = view.findViewById(R.id.txtFsica)
        btnFisica.setOnClickListener {

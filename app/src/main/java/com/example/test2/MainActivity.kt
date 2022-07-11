@@ -28,7 +28,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 
-class MainActivity : AppCompatActivity() , OnMapReadyCallback {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
@@ -43,10 +43,6 @@ class MainActivity : AppCompatActivity() , OnMapReadyCallback {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -54,7 +50,7 @@ class MainActivity : AppCompatActivity() , OnMapReadyCallback {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.blankFragment, R.id.PerfilFragment, R.id.nav_logout
+                R.id.nav_home, R.id.mapa, R.id.nav_slideshow, R.id.blankFragment, R.id.PerfilFragment, R.id.nav_logout
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -68,21 +64,6 @@ class MainActivity : AppCompatActivity() , OnMapReadyCallback {
             transaction.addToBackStack(null)
             transaction.commit()
         }
-        //Eso
-       /* binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)*/
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        //val mapi: MapView = findViewById(R.id.mapView2)
-       // mapi.getMapAsync(this)
-
-        /*val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.mapView2) as SupportMapFragment
-        mapFragment.getMapAsync(this)*/
-
-
-
-
 
     }
 
@@ -98,15 +79,4 @@ class MainActivity : AppCompatActivity() , OnMapReadyCallback {
     }
 
 
-
-
-
-    override fun onMapReady(googleMap: GoogleMap) {
-        mMap = googleMap
-
-
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-    }
 }

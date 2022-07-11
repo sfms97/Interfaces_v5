@@ -68,7 +68,7 @@ class apuntesZoom : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageView12)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
 
     }

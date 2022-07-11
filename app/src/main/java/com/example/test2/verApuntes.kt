@@ -72,7 +72,7 @@ class verApuntes : Fragment() {
         }
         var btnOcio: ImageView = view.findViewById(R.id.imageView27)
         btnOcio.setOnClickListener {
-            navCtrl.navigate(R.id.nav_gallery)
+            navCtrl.navigate(R.id.mapa)
         }
 
     }
