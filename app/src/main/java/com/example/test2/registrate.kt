@@ -5,9 +5,15 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import java.io.BufferedWriter
-import java.io.File
-import java.io.FileWriter
+import java.io.*
+import com.opencsv.CSVWriter
+import java.nio.charset.StandardCharsets
+import com.opencsv.bean.ColumnPositionMappingStrategy
+import com.opencsv.bean.StatefulBeanToCsv
+import com.opencsv.bean.StatefulBeanToCsvBuilder
+import java.util.*
+import kotlin.collections.ArrayList
+
 
 class registrate : AppCompatActivity() {
 
@@ -45,28 +51,64 @@ class registrate : AppCompatActivity() {
             getEmailR = emailRegistro!!.text.toString()
 
             println("HOOOOOOOOOOOOOOOLA")
-            val fileName = "app/base.apk/assets/loginDetails.csv"
+
             //val myFile = File(fileName)
 
-            val contenido = getUsernameR +"," + getPasswordR + "," + getNombreR + "," + getApellidoR +","+ getEmailR
+            val contenido = arrayOf(getUsernameR, getPasswordR , getNombreR ,getApellidoR, getEmailR)
+
+            var reader1: BufferedReader? = null
+            val userData: MutableList<User> = ArrayList()
+
+            //try{
+                /*val data = User()
+                val fileName = "loginDetails"
+                var reader = InputStreamReader(assets.open(fileName), "UTF-8")
+                reader1 = BufferedReader(reader)
+
+                val file = File(reader.toString())
+                var fileWriter: FileWriter?=null
+                var csvWriter: CSVWriter? = null
+                var beanToCsv: StatefulBeanToCsv<User>?
+
+                fileWriter = FileWriter(fileName)
+                csvWriter = CSVWriter(fileWriter,
+                    CSVWriter.DEFAULT_SEPARATOR,
+                    CSVWriter.NO_QUOTE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_LINE_END)
+
+                csvWriter.writeNext(contenido)*/
 
 
-            try{
-                val file = File(fileName)
 
-                val fw = FileWriter(fileName)
+                /*FileOutputStream(fileName).use {fos ->
+                OutputStreamWriter(fos, StandardCharsets.UTF_8).use{ osw ->
+                    CSVWriter(osw).use { writer ->
+                        writer.writeNext(contenido)
+                    }
+                }
+
+            }*/
+                //reader1 = BufferedReader(InputStreamReader(assets.open(fileName), "UTF-8"))
+                //reader1.readLine()
+                println("encuentra")
+
+               /* val file = File(fileName)
+                val fw = FileWriter(contenido)
                 val bw = BufferedWriter(fw)
                 bw.write(contenido)
                 bw.close()
 
-                println(contenido)
+                println(contenido)*/
 
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)
 
-            }catch (e: java.io.FileNotFoundException){
+           /* }catch (e: java.io.FileNotFoundException){
                 println("NOT FOUNDDDDDDDDDDDDDDD")
-            }
+            }*/
         }
     }
+
+
 }

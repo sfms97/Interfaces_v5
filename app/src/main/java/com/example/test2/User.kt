@@ -2,7 +2,7 @@ package com.example.test2
 
 import java.io.Serializable
 
-class User : Serializable {
+class User() : Serializable {
     var username: String? = null
     var password: String? = null
     var nombre: String? = null

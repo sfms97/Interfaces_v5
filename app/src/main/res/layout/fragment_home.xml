@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="#FFEB3B"
     tools:context=".ui.home.HomeFragment">
 
 
@@ -101,6 +103,7 @@
             android:layout_marginBottom="32dp"
             android:background="#32F1A433"
             android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:focusedMonthDateColor="@color/bluegray_400"
             android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toTopOf="@+id/viewRectangle9"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,5 +125,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.666"
             tools:text="Calendario" />
+
+        <TextView
+            android:id="@+id/textViewExamen"
+            android:layout_width="70dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="200dp"
+            android:clickable="true"
+            android:text="Examen"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="@+id/calendarView"
+            app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

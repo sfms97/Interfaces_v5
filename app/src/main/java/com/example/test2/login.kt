@@ -2,12 +2,9 @@ package com.example.test2
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.*
 
@@ -37,7 +34,7 @@ class login : AppCompatActivity() {
             try {
                 getUsername1 = username!!.text.toString()
                 getPassword1 = password!!.text.toString()
-                val fileName = "loginDetails.csv"
+                val fileName = "loginDetails"
                 println(getUsername1)
                 println(getPassword1)
 
@@ -49,6 +46,7 @@ class login : AppCompatActivity() {
                             line = it } != null) {
                         val token = line.split(",").toTypedArray()
                         if (token.size > 0 && token != null) {
+
                             val data = User()
                             data.setUsername(token[0])
                             data.setPassword(token[1])
@@ -61,8 +59,10 @@ class login : AppCompatActivity() {
                                 if (userData.get(i).getUsername() == getUsername1 && userData.get(i).getPassword() == getPassword1) {
                                     println("Valores correctos")
                                     val intent = Intent(this, MainActivity::class.java)
+
                                     startActivity(intent)
                                     onStop()
+
                                 }
                                 i++
                             }

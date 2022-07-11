@@ -20,18 +20,18 @@
             app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintStart_toStartOf="parent" />
 
+
         <ImageView
             android:id="@+id/imageGroup19"
             style="@style/groupStyleorange_500_e5"
             android:layout_width="0dp"
             android:layout_height="@dimen/_40pxh"
-            android:layout_marginBottom="4dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_group19"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
-
 
         <ImageView
             android:id="@+id/imageGroup"

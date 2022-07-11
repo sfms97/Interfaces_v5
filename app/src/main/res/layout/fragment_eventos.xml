@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eventos">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintOcio"
+        style="@style/groupStylelime_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/imageCalendarDate"
+            android:layout_width="@dimen/_31pxh"
+            android:layout_height="@dimen/_33pxh"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_calendardate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toEndOf="@+id/txt"
+            app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="313dp"
+            android:layout_height="76dp"
+            android:background="@drawable/rectangle_bg_gray_400_93_radius_20"
+
+            android:inputType="text"
+            android:text="       Revisar apuntes vistos en clase"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtComentarios" />
+
+        <TextView
+            android:id="@+id/txt"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="182dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_bg_gray_400_93_radius_20"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:paddingStart="@dimen/_25pxh"
+            android:paddingTop="@dimen/_2pxv"
+            android:paddingBottom="@dimen/_6pxv"
+            android:singleLine="true"
+            android:text="16/07/2022"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.279"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="292dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_bg_gray_400_93_radius_20"
+            android:inputType="text"
+            android:text="       Interfaces"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAsignatura" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tituloEventos"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="301dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_bg_gray_400_93_radius_20"
+            android:inputType="text"
+            android:text="       Examen"
+            android:textAlignment="inherit"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTtulo" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="117dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="296dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="Fecha"
+            app:layout_constraintBottom_toTopOf="@+id/imageGroup4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_fecha" />
+
+        <TextView
+            android:id="@+id/txtComentarios"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="204dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="Comentarios"
+            app:layout_constraintBottom_toTopOf="@+id/imageGroup4"
+
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_comentarios" />
+
+        <TextView
+            android:id="@+id/txtAsignatura"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="@dimen/_57pxh"
+            android:layout_marginBottom="400dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="Asignatura2"
+            app:layout_constraintBottom_toTopOf="@+id/imageGroup4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_asignatura" />
+
+        <TextView
+            android:id="@+id/txtTtulo"
+            style="@style/txtSansitaSwashedromanregular18_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:layout_marginBottom="492dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="Titulo"
+            app:layout_constraintBottom_toTopOf="@+id/imageGroup4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_t_tulo" />
+
+        <TextView
+            android:id="@+id/txtEventos"
+            style="@style/txtSansitaSwashedromanregular36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Eventos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/lbl_eventos" />
+
+        <ImageView
+            android:id="@+id/imageGroup4"
+            style="@style/groupStyleorange_500_e5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group19"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toTopOf="@+id/imageGroup4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/img_group_10" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageGroup4"
+            app:layout_constraintEnd_toEndOf="@+id/imageGroup4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageGroup4"
+            app:layout_constraintVertical_bias="0.478"
+            app:srcCompat="@drawable/img_group_12" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="47dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView32"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img_group_1" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

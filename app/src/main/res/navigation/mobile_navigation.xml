@@ -105,4 +105,9 @@
         android:id="@+id/mapa"
         android:name="com.example.test2.MapsFragment"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/eventos"
+        android:name="com.example.test2.eventos"
+        android:label="fragment_eventos"
+        tools:layout="@layout/fragment_eventos" />
 </navigation>
