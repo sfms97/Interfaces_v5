@@ -79,8 +79,6 @@ class HomeFragment : Fragment() {
 
             navCtrl.navigate(R.id.mapa)
 
-            navCtrl.navigate(com.example.test2.R.id.nav_gallery)
-
         }
 
         var btnExamen: TextView = view.findViewById(com.example.test2.R.id.textViewExamen)
