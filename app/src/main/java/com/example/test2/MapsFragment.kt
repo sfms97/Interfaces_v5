@@ -18,7 +18,7 @@ class MapsFragment : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
         val madrid = LatLng(40.4036657, -3.6724748)
-        googleMap.addMarker(MarkerOptions().position(madrid).title("Madrid"))
+        googleMap.addMarker(MarkerOptions().position(madrid).title("Bar UEM"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(madrid))
     }
 
