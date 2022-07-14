@@ -190,16 +190,16 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_6pxh"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="4dp"
                         android:layout_marginEnd="@dimen/_20pxh"
                         android:ellipsize="end"
                         android:gravity="start"
                         android:singleLine="true"
+                        android:text="@string/msg_apuntes_6_fech"
                         app:layout_constraintEnd_toEndOf="@+id/imageRectangle17"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="@+id/imageRectangle17"
-                        app:layout_constraintTop_toBottomOf="@+id/txtApuntes5fech"
-                        android:text="@string/msg_apuntes_6_fech" />
+                        app:layout_constraintTop_toBottomOf="@+id/txtApuntes5fech" />
 
                     <ImageView
                         android:id="@+id/imageInterfaceRemov"
