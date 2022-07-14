@@ -196,8 +196,8 @@
 
         <ImageView
             android:id="@+id/imageView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="57dp"
+            android:layout_height="31dp"
             android:layout_marginBottom="4dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -210,8 +210,8 @@
 
         <ImageView
             android:id="@+id/imageView32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageGroup4"
             app:layout_constraintEnd_toEndOf="@+id/imageGroup4"
@@ -222,17 +222,15 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="47dp"
-            android:layout_height="27dp"
-            android:layout_marginBottom="12dp"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
             android:clickable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView32"
-            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintHorizontal_bias="0.35"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/img_group_1" />
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

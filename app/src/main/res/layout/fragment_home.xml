@@ -56,8 +56,8 @@
 
             <ImageView
                 android:id="@+id/imageGroup"
-                android:layout_width="57dp"
-                android:layout_height="31dp"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="4dp"
                 android:clickable="false"
                 android:scaleType="fitXY"
@@ -69,14 +69,14 @@
 
             <ImageView
                 android:id="@+id/imageGroup1"
-                android:layout_width="43dp"
-                android:layout_height="29dp"
+                android:layout_width="40dp"
+                android:layout_height="32dp"
                 android:layout_marginTop="4dp"
                 android:clickable="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_group_11"
                 app:layout_constraintEnd_toStartOf="@+id/imageGroup2"
-                app:layout_constraintHorizontal_bias="0.306"
+                app:layout_constraintHorizontal_bias="0.326"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
 

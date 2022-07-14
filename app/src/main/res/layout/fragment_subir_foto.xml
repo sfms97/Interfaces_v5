@@ -89,37 +89,37 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-                    android:id="@+id/imageView23"
-                    android:layout_width="56dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="16dp"
-                    android:clickable="false"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView24"
-                    app:layout_constraintHorizontal_bias="0.39"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageGroup43"
-                    app:srcCompat="@drawable/img_group_1" />
+            android:id="@+id/imageView23"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageGroup43"
+            app:srcCompat="@drawable/img_group_1" />
 
-                <ImageView
-                    android:id="@+id/imageView24"
-                    android:layout_width="56dp"
-                    android:layout_height="30dp"
-                    android:clickable="true"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/imageGroup43"
-                    app:layout_constraintStart_toStartOf="@+id/imageGroup43"
-                    app:layout_constraintTop_toTopOf="@+id/imageGroup43"
-                    app:srcCompat="@drawable/img_group_12" />
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageGroup43"
+            app:layout_constraintStart_toStartOf="@+id/imageGroup43"
+            app:layout_constraintTop_toTopOf="@+id/imageGroup43"
+            app:srcCompat="@drawable/img_group_12" />
 
-                <ImageView
-                    android:id="@+id/imageView25"
-                    android:layout_width="60dp"
-                    android:layout_height="34dp"
-                    android:clickable="true"
-                    app:layout_constraintEnd_toEndOf="@+id/imageGroup43"
-                    app:layout_constraintHorizontal_bias="0.628"
-                    app:layout_constraintStart_toEndOf="@+id/imageView24"
-                    app:layout_constraintTop_toTopOf="@+id/imageView24"
-                    app:srcCompat="@drawable/img_group_10" />
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="57dp"
+            android:layout_height="31dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="@+id/imageGroup43"
+            app:layout_constraintHorizontal_bias="0.628"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/imageView24"
+            app:srcCompat="@drawable/img_group_10" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

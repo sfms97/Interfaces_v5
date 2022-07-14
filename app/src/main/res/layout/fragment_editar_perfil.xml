@@ -175,8 +175,8 @@
 
         <ImageView
             android:id="@+id/imageView14"
-            android:layout_width="47dp"
-            android:layout_height="27dp"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
             android:clickable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView15"
@@ -187,8 +187,8 @@
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageGroup19"
             app:layout_constraintEnd_toEndOf="@+id/imageGroup19"
@@ -199,8 +199,8 @@
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="57dp"
+            android:layout_height="31dp"
             android:layout_marginBottom="4dp"
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageGroup19"
