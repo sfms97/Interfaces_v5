@@ -7,24 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageGroup3"
-            android:layout_width="233dp"
-            android:layout_height="151dp"
-            android:layout_marginTop="60dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_group"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/txtEditar"
             style="@style/txtSolidRounded"
             android:layout_width="75dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="68dp"
             android:clickable="true"
             android:ellipsize="end"
             android:gravity="center"
@@ -33,7 +21,7 @@
             android:text="@string/lbl_editar"
             app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
             app:layout_constraintEnd_toStartOf="@+id/txtSubirFoto"
-            app:layout_constraintHorizontal_bias="0.673"
+            app:layout_constraintHorizontal_bias="0.674"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -41,7 +29,7 @@
             style="@style/txtSolidRounded"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="68dp"
             android:clickable="true"
             android:ellipsize="end"
             android:gravity="center"
@@ -52,7 +40,7 @@
             android:text="@string/lbl_subir_foto"
             app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.773"
+            app:layout_constraintHorizontal_bias="0.7"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
@@ -60,24 +48,26 @@
             style="@style/txtSolidRounded_1"
             android:layout_width="242dp"
             android:layout_height="48dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginBottom="352dp"
             android:ellipsize="end"
             android:gravity="start"
             android:paddingStart="@dimen/_7pxh"
             android:paddingBottom="@dimen/_7pxv"
             android:singleLine="true"
             android:text="Alex"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup100"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageGroup3" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="0.814" />
 
         <EditText
             android:id="@+id/txtFirstname"
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
             android:layout_height="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:ellipsize="end"
             android:gravity="start"
             android:paddingStart="@dimen/_9pxh"
@@ -85,7 +75,7 @@
             android:singleLine="true"
             android:text="AlexF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
@@ -94,7 +84,7 @@
             style="@style/txtSolidRounded_1"
             android:layout_width="240dp"
             android:layout_height="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:ellipsize="end"
             android:gravity="start"
             android:paddingStart="@dimen/_11pxh"
@@ -102,7 +92,7 @@
             android:singleLine="true"
             android:text="Fern"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtFirstname" />
 
@@ -120,10 +110,10 @@
             android:text="ej@mail.com"
             app:layout_constraintBottom_toTopOf="@+id/txtEditar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtLastname"
-            app:layout_constraintVertical_bias="0.173" />
+            app:layout_constraintVertical_bias="0.015" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintGroup100"
@@ -170,6 +160,17 @@
                 app:layout_constraintStart_toEndOf="@+id/imageGroup2"
                 app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="192dp"
+            android:layout_height="217dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/perfil" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
