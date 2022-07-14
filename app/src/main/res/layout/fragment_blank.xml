@@ -29,7 +29,7 @@
                     android:id="@+id/imageGroup27"
                     style="@style/groupStyleorange_500_e5"
                     android:layout_width="411dp"
-                    android:layout_height="55dp"
+                    android:layout_height="49dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_group19"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -221,6 +221,7 @@
                     app:layout_constraintHorizontal_bias="0.267"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/imageGroup27"
+                    app:layout_constraintVertical_bias="0.545"
                     app:srcCompat="@drawable/img_group_1" />
 
                 <ImageView

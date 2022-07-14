@@ -11,8 +11,8 @@
         <ImageView
             android:id="@+id/imageGroup52"
             style="@style/groupStyleorange_500_e5"
-            android:layout_width="412dp"
-            android:layout_height="57dp"
+            android:layout_width="411dp"
+            android:layout_height="49dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_group19"
             app:layout_constraintBottom_toBottomOf="parent"

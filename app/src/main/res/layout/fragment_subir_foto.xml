@@ -5,11 +5,12 @@
         android:id="@+id/constraintGroup247"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylelime_100">
+
         <ImageView
             android:id="@+id/imageGroup43"
             style="@style/groupStyleorange_500_e5"
-            android:layout_width="412dp"
-            android:layout_height="57dp"
+            android:layout_width="411dp"
+            android:layout_height="49dp"
             android:scaleType="fitXY"
             android:src="@drawable/img_group19"
             app:layout_constraintBottom_toBottomOf="parent"

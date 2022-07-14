@@ -48,12 +48,11 @@
             android:id="@+id/constraintGroup289"
             style="@style/groupStyleorange_500_e5"
             android:layout_width="411dp"
-            android:layout_height="57dp"
+            android:layout_height="49dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/imageGroup"
@@ -83,7 +82,7 @@
 
             <ImageView
                 android:id="@+id/imageGroup2"
-                android:layout_width="56dp"
+                android:layout_width="48dp"
                 android:layout_height="30dp"
                 android:clickable="true"
                 android:scaleType="fitXY"

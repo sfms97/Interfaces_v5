@@ -3,7 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_eventos.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/content_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_apuntes_fisica.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_apuntes_subidos.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_asignatura_subida.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_blank.xml" value="0.22" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_crear_asignatura.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_editar_perfil.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_eliminar.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_eventos.xml" value="0.22" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_gallery.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_maps.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_perfil.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_slideshow.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_subir_apuntes.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_subir_foto.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/alext/OneDrive/Documentos/GitHub/Study&amp;Enjoy/Interfaces_v5/app/src/main/res/layout/fragment_ver_apuntes.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

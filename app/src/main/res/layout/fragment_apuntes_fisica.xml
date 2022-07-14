@@ -29,8 +29,8 @@
                 <ImageView
                     android:id="@+id/imageGroup32"
                     style="@style/groupStyleorange_500_e5"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_40pxh"
+                    android:layout_width="411dp"
+                    android:layout_height="49dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_group19"
                     app:layout_constraintBottom_toBottomOf="parent"
